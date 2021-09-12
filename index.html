@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Έκδοση Πιστοποιητικού</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            Αίτηση έκδοσης Πιστοποιητικού
+        </h1>
+        <hr>
+        <h3>
+            Στοιχεία φοιτητή
+        </h3>
+        <p class="ena">
+            Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες
+        </p>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2" class="bold">Ονοματεπώνυμο</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="big" name="name" placeholder="Όνομα">
+                    </td>
+                    <td class="dio">
+                        <input class="big" type="text" name="surname" placeholder="Επίθετο">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" class="bold">Στοιχεία διεύθυνσης </td>
+                </tr>
+                <tr>
+                    <td colspan="2" ><input class="bigger" type="text" name="address" placeholder="Οδός και αριθμός"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"class="big"  name="poli" placeholder="Πόλη"></td>
+                    <td class="dio"><input type="text" class="big" name="tk" placeholder="Ταχυδρομικός αριθμός"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="bold">Στοιχεία Επικοινωνίας</td>
+                </tr>
+                <tr>
+                    <td><input type="tel" class="big" name="phone" placeholder="Τηλέφωνο"></td>
+                    <td class="dio"><input class="big" type="email" name="email" placeholder="Διεύθυνση email"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Έτος σπουδών</td> 
+                    <td class="bold dio">Αριθμός Μητρώου</td>
+                </tr>
+                <tr>
+                    <td >  
+                    <input type="radio" name="a" checked> 
+                    <label for="a">A</label>
+                    <input type="radio" name="b" > 
+                    <label for="a">B</label>
+                    <input type="radio" name="c" > 
+                    <label for="c">C</label>
+                    <input type="radio" name="d" > 
+                    <label for="d">D</label>
+                    <input type="radio" name="e" > 
+                    <label for="e">E</label>
+                    <input type="radio" name="e+" > 
+                    <label for="e+">E+</label>
+                    <input type="radio" name="mf" > 
+                    <label for="mf">ΜΦ</label>
+                    </td>
+                    <td class="dio">
+                        <input type="text" name="am" class="big" placeholder="Αριθμός μητρώου">
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </form>
+        <hr>
+        <form>
+            <h3>
+                Πιστοποιητικό
+            </h3>
+            <p class="ena">
+                Επιλέξτε πιστοποιητικό και τρόπο παραλαβής
+            </p>
+            <label for="eidh"><b>Είδος Πιστοποιητικού</b></label>
+            <br>
+            <select name="eidh" class="bigger">
+                <option value="ena">Φωτοτυπία καρτέλας</option>
+                <option value="dio">Αναλυτική βαθμολογία</option>
+                <option value="τρια">Φοιτητική κατάσταση</option>            
+            </select>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th> Τρόπος παραλαβής πιστοποιητικο</th>
+                    <th class="deyteri">Ημερομηνία Παραλαβής</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="radio" name="pa" checked> 
+                        <label   for="pa">Παραλαβή από πανεπιστήμιο</label>
+                    </td>
+                    <td class="deyteri"><input  type="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="radio" name="spiti" > 
+                        <label  for="spiti">Παράδοση στο σπίτι</label>
+                    </td>  
+                </tr>
+                    
+            </table>
+            
+        </form>
+        <hr>
+        <button type="submit">Υποβολή</button> 
+    </body>
+</html>
